@@ -2,8 +2,8 @@
 	<img src="https://github.com/haya3218/nna/raw/master/images/AboutImage.png"> 
 </p>
 
-# ALL YOUR FUCKING FAULT
-A scoop gui and a Windows toolbox.
+# nna
+nna (recursive backronym for *nna's not apt*, formerly AllYourFault) is a scoop gui and a windows toolbox.
 
 ## Hell is this?
 
@@ -13,7 +13,7 @@ If you see any issues, please attack them to my face.
 
 ### Installation
 
-Currently there are no binaries for AllYourFault. You can build it yourself.
+Currently there are no binaries for nna. You can build it yourself.
 
 Solution file is set to Visual Studio 2019. You *may* be able to reconstruct the solution to VS 2022 but idk
 Make sure NuGet packages work and make sure you have .NET framework 4.7.2 SDK installed.
