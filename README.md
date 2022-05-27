@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-	<img width="33%" src="https://github.com/haya3218/AllYourFault/raw/master/images/AboutImage.png"> 
+	<img width="33%" src="https://github.com/haya3218/nna/raw/master/images/AboutImage.png"> 
 </p>
 
 # ALL YOUR FUCKING FAULT
