@@ -14,6 +14,7 @@ namespace AllYourFault
         public dynamic License;
         public string ManifestName;
         public string status;
+        public string status2;
 
         public Manifest(string an = "null", string de = "null", dynamic li = null, string man = "main")
         {
@@ -25,9 +26,11 @@ namespace AllYourFault
             {
                 case true:
                     status = "Update";
+                    status2 = "Remove";
                     break;
                 case false:
                     status = "Install";
+                    status2 = "Install";
                     break;
             }
         }

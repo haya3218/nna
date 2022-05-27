@@ -41,7 +41,9 @@ namespace AllYourFault
             this.ActionCol = ((BrightIdeasSoftware.OLVColumn)(new BrightIdeasSoftware.OLVColumn()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.removeModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actionModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageBucketsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
@@ -154,19 +156,39 @@ namespace AllYourFault
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.removeModeToolStripMenuItem,
+            this.actionModeToolStripMenuItem,
             this.manageBucketsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.contextMenuStrip1.Size = new System.Drawing.Size(166, 70);
             // 
-            // removeModeToolStripMenuItem
+            // actionModeToolStripMenuItem
             // 
-            this.removeModeToolStripMenuItem.CheckOnClick = true;
-            this.removeModeToolStripMenuItem.Name = "removeModeToolStripMenuItem";
-            this.removeModeToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.removeModeToolStripMenuItem.Text = "Remove Mode";
+            this.actionModeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateToolStripMenuItem,
+            this.removeToolStripMenuItem});
+            this.actionModeToolStripMenuItem.Name = "actionModeToolStripMenuItem";
+            this.actionModeToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.actionModeToolStripMenuItem.Text = "Action Mode";
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Checked = true;
+            this.updateToolStripMenuItem.CheckOnClick = true;
+            this.updateToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            // 
+            // removeToolStripMenuItem
+            // 
+            this.removeToolStripMenuItem.CheckOnClick = true;
+            this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeToolStripMenuItem.Text = "Remove";
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
             // manageBucketsToolStripMenuItem
             // 
@@ -190,7 +212,8 @@ namespace AllYourFault
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AllYourFault";
-            this.Text = "AllYourFault";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "nna";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -213,8 +236,10 @@ namespace AllYourFault
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private CueTextBox cueTextBox1;
         private BrightIdeasSoftware.DescribedTaskRenderer describedTaskRenderer1;
-        private System.Windows.Forms.ToolStripMenuItem removeModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageBucketsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actionModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
     }
 }

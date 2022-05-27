@@ -68,6 +68,8 @@ namespace AllYourFault
             cmd.StartInfo.RedirectStandardInput = true;
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
+            WaitForm w = new WaitForm();
+            w.Show();
             if (cueTextBox2.Text != null || cueTextBox2.Text != "")
             {
                 cmd.StandardInput.WriteLine("scoop bucket add " + cueTextBox1.Text + " " + cueTextBox2.Text);
@@ -75,6 +77,7 @@ namespace AllYourFault
             cmd.StandardInput.WriteLine("scoop bucket add " + cueTextBox1.Text);
             cmd.StandardInput.Close();
             await ProcessExtensions.WaitForExitAsync(cmd);
+            w.Hide();
             buckets = new List<Bucket>();
             string[] files = Directory.GetDirectories(AllYourFault.userprof + "\\scoop\\buckets\\");
             for (int i = 0; i < files.Length; i++)

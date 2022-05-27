@@ -84,8 +84,10 @@ namespace AllYourFault
             w.Show();
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.UseShellExecute = false;
-            if (Directory.Exists(userprof + "\\scoop\\apps\\" + e.Item.Text))
+            if (Directory.Exists(userprof + "\\scoop\\apps\\" + e.Item.Text) && !removeToolStripMenuItem.Checked)
                 cmd.StartInfo.Arguments = "/c scoop update " + e.Item.Text;
+            else if (Directory.Exists(userprof + "\\scoop\\apps\\" + e.Item.Text) && removeToolStripMenuItem.Checked)
+                cmd.StartInfo.Arguments = "/c scoop uninstall " + e.Item.Text;
             else
                 cmd.StartInfo.Arguments = "/c scoop install " + e.Item.Text;
             cmd.Start();
@@ -93,6 +95,20 @@ namespace AllYourFault
             await ProcessExtensions.WaitForExitAsync(cmd);
             w.Hide();
             RerunObj();
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            removeToolStripMenuItem.Checked = false;
+            ActionCol.AspectName = "status";
+            this.objectListView1.SetObjects(manifests);
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            updateToolStripMenuItem.Checked = false;
+            ActionCol.AspectName = "status2";
+            this.objectListView1.SetObjects(manifests);
         }
     }
 }
