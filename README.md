@@ -11,15 +11,19 @@ To *KISS, nna is lightweight, basic, and non-flashy. It's meant to drive down ha
 ## FAQ
 
 > Why do this? Scoop is already good enough on its own! And what about Winaero Tweaker?
+
 I'm not really doing this to rival any windows decrapfiers or scoop itself. I just wanted to create a nice and basic place to get programs and decrapify Windows 11, as I was getting sick of it at the time.
 
 > Is there a better way of doing this?
+
 Absolutely. I only did this project as a pet peeve. I don't really want it to be too serious.
 
 > What's with the backronym?
+
 Don't talk about that.
 
 > How do I install it?
+
 See below.
 
 ### Installation
