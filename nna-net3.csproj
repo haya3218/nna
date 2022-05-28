@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>nna_net3</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="ObjectListView.Repack.Core3" Version="2.9.2" />
+    <PackageReference Include="Tomlyn" Version="0.14.3" />
+  </ItemGroup>
+
+</Project>
