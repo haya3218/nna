@@ -3,13 +3,28 @@
 </p>
 
 # nna
+
 nna (recursive backronym for *nna's not apt*, formerly AllYourFault) is a scoop gui and a windows toolbox.
 
-## Hell is this?
+To *KISS, nna is lightweight, basic, and non-flashy. It's meant to drive down having to waste system resources, and only fits nicely within a few megabytes of both memory and storage.
 
-This is a glorified Windows toolbox dedicated to making Windows less shit.
-It eventually evolved into a gui for scoop. A bad one in particular.
-If you see any issues, please attack them to my face.
+## FAQ
+
+> Why do this? Scoop is already good enough on its own! And what about Winaero Tweaker?
+
+I'm not really doing this to rival any windows decrapfiers or scoop itself. I just wanted to create a nice and basic place to get programs and decrapify Windows 11, as I was getting sick of it at the time.
+
+> Is there a better way of doing this?
+
+Absolutely. I only did this project as a pet peeve. I don't really want it to be too serious.
+
+> What's with the backronym?
+
+Don't talk about that.
+
+> How do I install it?
+
+See below.
 
 ### Installation
 
@@ -20,16 +35,18 @@ Make sure NuGet packages work and make sure you have .NET framework 4.7.2 SDK in
 
 ### Features
 
-Features? Well we got em.... features.
+Since nna is both a scoop gui and a tweaker, the features are self explanatory.
 
 - A glorified scoop gui
 - ...with bucket customization support!
-- Windows scripts
-- Lightweight (if you dont count net framework)
+- Tweakers to make Windows "better" *I guess*
+- One-click to install it all! No need for other shit (apart from .NET Framework Runtime)
+- Lightweight (if you dont count the runtime)
 - Specifically made for 10+ (Yes that includes 11, nerds)
 
 ![Screenie](/readme/screenie.png)
 
-### License
+# Legality
 
-AllYourFault is under the GPLv3 license. Some components are not however.
+You may use the source code of nna however you want, but you need to keep it available to everyone, not without a fee for commercial purposes.
+Some components/packages of nna are not under the GNU GPL. They may be under the MIT, Apache, BSD, or the public domain.
