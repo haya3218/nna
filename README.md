@@ -28,7 +28,7 @@ See below.
 
 ### Installation
 
-Currently there are no binaries for nna. You can build it yourself.
+You can get a prerelease build via Github Releases. You are adviced however, to build it yourself.
 
 Solution file is set to Visual Studio 2019. You *may* be able to reconstruct the solution to VS 2022 but idk
 Make sure NuGet packages work and make sure you have .NET framework 4.7.2 SDK installed.
