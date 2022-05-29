@@ -27,12 +27,12 @@ namespace nna_net3
             List<ColumnNameSize> cols = new List<ColumnNameSize>();
             DescribedTaskRenderer rend = new DescribedTaskRenderer
             {
-                TitleFont = new Font(new FontFamily("MS Reference Sans Serif"), 12.0f, FontStyle.Bold),
+                TitleFont = new Font(new FontFamily("Microsoft Sans Serif"), 12.0f, FontStyle.Bold),
                 DescriptionAspectName = "ManifestDesc"
             };
             cols.Add(new ColumnNameSize(120, "Application", "ManifestName", true, true, true, HorizontalAlignment.Left, rend));
             cols.Add(new ColumnNameSize(120, "License", "ManifestLicense", false, HorizontalAlignment.Center));
-            cols.Add(new ColumnNameSize(120, "Action", "Status1", false, true, new Point(60, 30), false, true, HorizontalAlignment.Center));
+            cols.Add(new ColumnNameSize(120, "Action", "Status1", false, true, new Point(80, 30), false, true, HorizontalAlignment.Center));
             StaticUtils.GenerateListView(olvMain, cols);
             olvMain.SetObjects(manifests);
             olvMain.RowHeight = 68;

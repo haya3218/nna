@@ -120,6 +120,7 @@ namespace nna_net3.src.objects
 
             proc.Start();
             await WaitForExitAsync(proc);
+            proc.Close();
         }
     }
 }
