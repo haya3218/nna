@@ -1,4 +1,5 @@
 ﻿using BrightIdeasSoftware;
+using nna_net3.src;
 using nna_net3.src.objects;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,12 @@ namespace nna_net3
         private void SearchBox_TextChanged(object sender, EventArgs e)
         {
             olvMain.ModelFilter = TextMatchFilter.Contains(olvMain, SearchBox.Text);
+        }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AboutDialog ab = new AboutDialog();
+            ab.Show();
         }
     }
 }
